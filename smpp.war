@@ -2,8 +2,25 @@
 <html>
 <body>
 
-<h2>HTML Image</h2>
-<img src="C:\Users\Ganapathy M\Desktop\download.jpg" alt="Trulli" width="500" height="333">
+<h2>JavaScript Functions</h2>
+<p>In this example the fulllName method of person is <b>applied</b> on person1:</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+
+const person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+
+document.getElementById("demo").innerHTML = person.fullName.apply(person1); 
+</script>
 
 </body>
 </html>
